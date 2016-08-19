@@ -1,8 +1,8 @@
-import babel from 'rollup-plugin-babel'
+import buble from 'rollup-plugin-buble'
 
 export default {
   entry: 'index.js',
-  plugins: [ babel() ],
+  plugins: [ buble() ],
   format: 'cjs',
-  dest: 'melody-os.js'
+  dest: '{{ name }}.js'
 }
